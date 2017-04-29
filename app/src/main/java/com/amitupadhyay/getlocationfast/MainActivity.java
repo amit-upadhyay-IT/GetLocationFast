@@ -223,6 +223,7 @@ public class MainActivity extends LocationBaseActivity implements SamplePresente
             String formatedAddress = firstObj.getString("formatted_address");
 
             showLocationTV.setText(formatedAddress);
+            this.dismissProgress();
 
 
         }catch (Exception e)

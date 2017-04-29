@@ -23,7 +23,8 @@ public class SamplePresenter {
     }
 
     public void onLocationChanged(Location location) {
-        sampleView.dismissProgress();
+        // I am not dismissing the progress here rather I am doing it on the main activity
+        //sampleView.dismissProgress();
         setText(location);
     }
 
